@@ -1,0 +1,30 @@
+{
+  "name": "wackocriminal",
+  "version": "1.0.0",
+  "description": "Please sponsor us",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0",
+    "nodemon": "^1.19.4"
+  },
+  "scripts": {
+    "build-css": "node-sass --include-path scss sass/main.scss   css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "run-server": "live-server --open=getInvolved.html ",
+    "startdev": "concurrently \"npm run watch-css\" \"npm run run-server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbusa22/WackoCriminal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbusa22/WackoCriminal/issues"
+  },
+  "homepage": "https://github.com/jbusa22/WackoCriminal#readme"
+}
